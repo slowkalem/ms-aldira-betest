@@ -1,0 +1,308 @@
+{
+	"info": {
+		"_postman_id": "2b987094-5953-4096-9c95-6eb67c9aea70",
+		"name": "crud node js mongo db",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38292375"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "Get All Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/getById?id=671cf4c4071756c0dde77573",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"getById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "671cf4c4071756c0dde77573"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By IdentityNumber",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/getByIdentityNumber?identityNumber=1234",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"getByIdentityNumber"
+							],
+							"query": [
+								{
+									"key": "identityNumber",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By AccountNumber",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/getByAccountNumber?accountNumber=1234",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"getByAccountNumber"
+							],
+							"query": [
+								{
+									"key": "accountNumber",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emailAddress\" : \"slowkalem@gmail.com\",\r\n    \"userName\": \"slowkalem\",\r\n    \"accountNumber\": \"12345\",\r\n    \"identityNumber\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"671cf4c4071756c0dde77573\",\r\n    \"emailAddress\" : \"aldiraahmadwibawa@gmail.com\",\r\n    \"userName\": \"aldira\",\r\n    \"accountNumber\": \"1234\",\r\n    \"identityNumber\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"671d0367cd6b66d9b7c459b4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiZGF0YSIsImlhdCI6MTcyOTk1MzQwMywiZXhwIjoxNzI5OTk2NjAzfQ.1aZufO2f-zgwx1r8Lmk6dKeyhui87JOMsvVnmxQeys4",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/auth/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
